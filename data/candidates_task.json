@@ -1,0 +1,53 @@
+{
+	"anomalousProperty": {
+		"key": "Country",
+		"value": "Italy"
+	},
+	"significantVariables": [
+		{
+			"key": "Browser",
+			"value": "Chrome 42",
+			"relativeChange": 33
+		},
+		{
+			"key": "Browser",
+			"value": "Edge",
+			"relativeChange": 41
+		},
+		{
+			"key": "Firefox 40",
+			"value": "Edge",
+			"relativeChange": -60
+		},
+		{
+			"key": "Referrer",
+			"value": "somewebsite.co.uk",
+			"relativeChange": 55
+		},
+		{
+			"key": "uid",
+			"value": "ead4d4a7-1949-4689-b664-9cb6a31f5f6a",
+			"relativeChange": 2
+		},
+		{
+			"key": "uid",
+			"value": "3cac4aa2-ccad-49ba-8bc1-4248f2ad1c38",
+			"relativeChange": 4
+		},
+		{
+			"key": "uid",
+			"value": "8fa55d1b-fc01-443a-aef8-c7d8f87b51b0",
+			"relativeChange": 1.5
+		},
+		{
+			"key": "uid",
+			"value": "4c2ef347-38d4-4db9-aacb-530a118dd953",
+			"relativeChange": 4
+		},
+		{
+			"key": "uid",
+			"value": "83ae77a8-5264-47b8-8728-11e83d32bc40",
+			"relativeChange": 4
+		}
+	]
+}
