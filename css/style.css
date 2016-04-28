@@ -1,0 +1,19 @@
+svg {
+	border:1px solid #999;
+	cursor:move;	
+}
+.node path {
+  fill:#fff;
+  stroke-width: 1px;
+  cursor:pointer;
+}
+text {
+	stroke:#fff;
+	stroke-width: 0px;
+	font-size:10px;
+}
+.link {
+  stroke: #999;
+  stroke-opacity: 1;
+  stroke-width: 1px;
+}
