@@ -9,7 +9,7 @@ var Graph =  (function(){
 		
 	var zoom = d3.behavior.zoom().scaleExtent([0.1, 7]);
 	
-	var formatData = function (json){
+	var formattedData = function (json){
 		var data = {
 			  nodes:[],
 			  links:[]
@@ -44,7 +44,7 @@ var Graph =  (function(){
 		force: force,
 		svg: svg,
 		zoom: zoom,
-		getFormattedData: formatData
+		getFormattedData: formattedData
 	}
 })()
 
@@ -57,8 +57,7 @@ var g = svg.append("g");
 d3.json("data/candidates_task.json", function(error, json) {
  
 	if (error) throw error;
-	console.log(json);
- 
+
 	var data;
   
 	if (json) {
@@ -125,11 +124,9 @@ d3.json("data/candidates_task.json", function(error, json) {
 		node.on("mousedown", function(d) { 
 			d3.event.stopPropagation();
 		});
-		
-		
+
 		zoom.on("zoom", function() {
 			g.attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
-	
 		});
 			 
 		svg.call(zoom);
@@ -144,11 +141,9 @@ d3.json("data/candidates_task.json", function(error, json) {
 				.attr("y", function(d) { return ((d.source.y + d.target.y)/2); });
 				
 			node.attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
-			//text.attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
+
 		});
 	  
 	}
 
-
-  
 });
